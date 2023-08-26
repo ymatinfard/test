@@ -17,7 +17,7 @@ pipeline {
 
         stage('Python test') {
           steps {
-            sh 'npm i && python python helloworld.py'
+            sh 'python helloworld.py'
           }
         }
 
