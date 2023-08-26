@@ -8,19 +8,8 @@ pipeline {
     }
 
     stage('/Shell Script') {
-      parallel {
-        stage('/Shell Script') {
-          steps {
-            sh 'ls -la'
-          }
-        }
-
-        stage('Python test') {
-          steps {
-            sh 'python helloworld.py'
-          }
-        }
-
+      steps {
+        sh 'ls -la'
       }
     }
 
