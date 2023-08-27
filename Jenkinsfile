@@ -9,8 +9,7 @@ pipeline {
 
     stage('/Shell Script') {
       steps {
-        sh '''sh \'python helloworld.py\'
-       '''
+        sh 'python --version'
       }
     }
 
