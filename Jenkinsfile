@@ -9,7 +9,7 @@ pipeline {
 
     stage('/Shell Script') {
       steps {
-        sh 'bat ls -l'
+        sh 'bat \'ls -l\''
       }
     }
 
