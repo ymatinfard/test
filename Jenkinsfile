@@ -9,7 +9,8 @@ pipeline {
 
     stage('/Shell Script') {
       steps {
-        sh 'bat \'ls -l\''
+        sh '''sh \'python helloworld.py\'
+       '''
       }
     }
 
